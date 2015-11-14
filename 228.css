@@ -1,11 +1,128 @@
-html, body
+body, html
 {
-	background-color: black;
+	background-color: #E8EAF6;
 	font-family: Roboto;
+	color: rgba(0,0,0,.8);
+	margin: 0;
+	padding: 0;
+  overflow-x:  hidden;
+}
+paper-toolbar
+{
+  background-color: yellow;
+  color:red;
+}
+paper-button
+{
+  color: #3F51B5;
+}
+[main]
+{
+  background-color: #AAAAAA;
+}
+[drawer]
+{
+  background-color: #FFFFFF;
+}
+
+:root
+{
+	
+            --my-custom-color: red;
+            --paper-tab-ink: var(--my-custom-color);
+
+            /* custom CSS property */
+            --paper-tabs-selection-bar-color: blue;
+
+            /* custom CSS mixin */
+            --paper-tabs: {
+                color: var(--default-primary-color); /* variable defined in default-theme.html */
+                font-size: 20px;
+            }
 }
 
 h1
 {
 	color: white;
+	font-weight: 200;
+	font-size: 100px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	text-shadow: 0px 1px 30px black;
+  transition: 2s;
+}
+h2
+{
+	color: white;
+	font-weight: 200;
+	font-size: 50px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	text-shadow: 0px 1px 20px black;
+  transition: 1s;
+}
+h3
+{
+	text-align: center;
 	opacity: .8;
+	font-size: 30px;
+}
+
+paper-tabs, core-toolbar {
+    background-color: #3F51B5;
+    color: #fff;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+    --paper-tab-ink: red;
+    --paper-tabs-selection-bar-color: --paper-red;
+            --my-custom-color: red;
+            --paper-tab-ink: var(--my-custom-color);
+
+            /* custom CSS property */
+            --paper-tabs-selection-bar-color: blue;
+}
+
+#asd
+{
+  background-color: rgba(230, 100, 50, 1);
+  color:rgba(0, 0, 0, .8);
+}
+
+#welcome
+{
+  background: rgba(63, 81, 181, 0) url(bg.jpg);
+  /*background-blend-mode: saturation;*/
+  background-size: cover;
+  padding: 5em;
+  transition: 2s;
+}
+#kostil
+{
+  opacity: 0;
+  background-color: rgba(63, 81, 181, 0);
+  transition: opacity 2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20em;
+  margin: 0;
+  padding: 0;
+}
+
+iron-page
+{
+  margin: 2em;
+}
+
+#left-button
+{
+  position:relative;
+  left: 57.5em;
+}
+
+#right-button
+{
+  position:relative;
+  right: 55.5em;
 }
